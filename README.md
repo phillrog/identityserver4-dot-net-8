@@ -3,7 +3,7 @@ Com a descontinuação do suporte para Identity Server 4 e a necessidade de comp
 
 É crucial ressaltar que este projeto não pretende ser uma bifurcação (fork) ou substituto do Identity Server 4. Todos os direitos autorais e propriedade intelectual permanecem com os criadores e fundadores originais do Identity Server 4. O objetivo principal é fornecer uma versão compatível com .NET 8.0 para fins de aprendizado e uso pessoal, mantendo a integridade e o respeito pela obra original.
 
-IdentityServer é um framework OpenID Connect e OAuth 2.0 gratuito e de código aberto para ASP.NET Core. IdentityServer4Plus incorpora todas as implementações de protocolo e pontos de extensibilidade necessários para integrar autenticação baseada em token, logon único e controle de acesso à API em seus aplicativos. IdentityServer4Plus é oficialmente certificado pela OpenID Foundation e, portanto, compatível com as especificações e interoperável. Faz parte da .NET Foundation e opera sob seu código de conduta. É licenciado sob Apache 2 (uma licença aprovada pela OSI).
+IdentityServer é um framework OpenID Connect e OAuth 2.0 gratuito e de código aberto para ASP.NET Core. IdentityServer4 incorpora todas as implementações de protocolo e pontos de extensibilidade necessários para integrar autenticação baseada em token, logon único e controle de acesso à API em seus aplicativos. IdentityServer4 é oficialmente certificado pela OpenID Foundation e, portanto, compatível com as especificações e interoperável. Faz parte da .NET Foundation e opera sob seu código de conduta. É licenciado sob Apache 2 (uma licença aprovada pela OSI).
 
 # Important update
 Update para .net 8
