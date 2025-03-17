@@ -1,5 +1,5 @@
 # About IdentityServer
-Com a descontinuação do suporte para Identity Server 4 e a necessidade de compatibilidade com .NET 8.0, realizei a atualização do repositório original para esta nova versão. Este projeto, que nomeei como 'IdentityServer4Plus', é simplesmente uma versão atualizada do Identity Server 4, mantendo integralmente a estrutura e funcionalidades originais, e visa garantir sua compatibilidade com .NET 8.0.
+Com a descontinuação do suporte para Identity Server 4 e a necessidade de compatibilidade com .NET 8.0, realizei a atualização do repositório original para esta nova versão. Este projeto é simplesmente uma versão atualizada do Identity Server 4 e compatibilidade com .NET 8.0.
 
 É crucial ressaltar que este projeto não pretende ser uma bifurcação (fork) ou substituto do Identity Server 4. Todos os direitos autorais e propriedade intelectual permanecem com os criadores e fundadores originais do Identity Server 4. O objetivo principal é fornecer uma versão compatível com .NET 8.0 para fins de aprendizado e uso pessoal, mantendo a integridade e o respeito pela obra original.
 
