@@ -6,7 +6,7 @@ Com a descontinuação do suporte para Identity Server 4 e a necessidade de comp
 IdentityServer é um framework OpenID Connect e OAuth 2.0 gratuito e de código aberto para ASP.NET Core. IdentityServer4Plus incorpora todas as implementações de protocolo e pontos de extensibilidade necessários para integrar autenticação baseada em token, logon único e controle de acesso à API em seus aplicativos. IdentityServer4Plus é oficialmente certificado pela OpenID Foundation e, portanto, compatível com as especificações e interoperável. Faz parte da .NET Foundation e opera sob seu código de conduta. É licenciado sob Apache 2 (uma licença aprovada pela OSI).
 
 # Important update
-This project is not maintained anymore. This repo will be archived when .NET Core 3.1 end of support is reached (13th Dec 2022). All new development is happening in the new [Duende Software](https://github.com/duendesoftware) organization. 
+Update para .net 8
 
 See [here](https://duendesoftware.com/products/identityserver) for more details.
 
