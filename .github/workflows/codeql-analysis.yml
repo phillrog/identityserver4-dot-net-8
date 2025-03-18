@@ -37,6 +37,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - run: dotnet --info
+    
     - name: Setup dotnet
       uses: actions/setup-dotnet@v4
       with:
