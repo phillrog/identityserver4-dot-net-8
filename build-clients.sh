@@ -9,7 +9,7 @@ pushd ./src/clients
 for p in $(find . -name *.csproj); 
 do 
 
-    dotnet build $p  --configuration Release --no-restore; 
-    
+    # dotnet build $p  --configuration Release --no-restore; 
+    $p
 done
 popd
