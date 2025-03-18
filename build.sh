@@ -7,7 +7,7 @@ mkdir nuget
 dotnet tool restore
 
 pushd ./src/root/Storage
-~/build.sh "$@"
+./build.sh "$@"
 popd
 
 pushd ./src/root/IdentityServer4
