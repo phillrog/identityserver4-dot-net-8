@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <PackageId>IdentityServer4.Storage</PackageId>
-    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <Description>Storage interfaces and models for IdentityServer4.
 (A continuation Storage interfaces and models solution for the no longer maintaining project `identity server 4`)
     </Description>
