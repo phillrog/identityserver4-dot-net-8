@@ -8,8 +8,8 @@ namespace build
 {
     internal static class Program
     {
-        private const string solution = "src/IdentityServer.sln";
-        private const string solutionCodeQL = "src/IdentityServer.CodeQL.sln";
+        private const string solution = "src/IdentityServer4.All.sln";
+        private const string solutionCodeQL = "src/IdentityServer4.sln";
         private const string packOutput = "./artifacts";
         private const string PACKOUTPUTCOPY = "../../nuget";
         private const string envVarMissing = " environment variable is missing. Aborting.";
@@ -42,12 +42,12 @@ namespace build
 
             Target(Targets.Build, DependsOn(Targets.CleanBuildOutput), () =>
 		    {
-			    Run("dotnet", $"build {solution} -c Release --nologo");
+			    Run("dotnet", $"build {solution} -c Release /p:VersionPrefix=8.0.0 --version-suffix alpha --nologo");
 		    });
 
             Target(Targets.CodeQL, () =>
             {
-                Run("dotnet", $"build {solutionCodeQL} -c Release --nologo");
+                Run("dotnet", $"build {solutionCodeQL} -c Release /p:VersionPrefix=8.0.0 --version-suffix alpha --nologo");
             });
 
             Target(Targets.Test, DependsOn(Targets.Build), () =>
@@ -67,13 +67,13 @@ namespace build
             {
                 var directory = Directory.CreateDirectory(packOutput).FullName;
 
-                Run("dotnet", $"pack \"src/main/Storage/IdentityServer.Storage.csproj\" -c Release -o \"{directory}\" --no-build --nologo");
-                Run("dotnet", $"pack \"src/main/IdentityServer/IdentityServer.csproj\" -c Release -o \"{directory}\" --no-build --nologo");
+                Run("dotnet", $"pack \"src/root/Storage/IdentityServer4.Storage.csproj\" -c Release /p:VersionPrefix=8.0.0 --version-suffix alpha -o \"{directory}\" --no-build --nologo");
+                Run("dotnet", $"pack \"src/root/IdentityServer4/IdentityServer4.csproj\" -c Release /p:VersionPrefix=8.0.0 --version-suffix alpha -o \"{directory}\" --no-build --nologo");
 
-                Run("dotnet", $"pack \"src/main/EntityFramework.Storage/IdentityServer.EntityFramework.Storage.csproj\" -c Release -o \"{directory}\" --no-build --nologo");
-                Run("dotnet", $"pack \"src/main/EntityFramework/IdentityServer.EntityFramework.csproj\" -c Release -o \"{directory}\" --no-build --nologo");
+                Run("dotnet", $"pack \"src/root/EntityFramework.Storage/IdentityServer4.EntityFramework.Storage.csproj\" -c Release /p:VersionPrefix=8.0.0 --version-suffix alpha -o \"{directory}\" --no-build --nologo");
+                Run("dotnet", $"pack \"src/root/EntityFramework/IdentityServer4.EntityFramework.csproj\" -c Release /p:VersionPrefix=8.0.0 --version-suffix alpha -o \"{directory}\" --no-build --nologo");
 
-                Run("dotnet", $"pack \"src/main/AspNetIdentity/IdentityServer.AspNetIdentity.csproj\" -c Release -o \"{directory}\" --no-build --nologo");
+                Run("dotnet", $"pack \"src/root/AspNetIdentity/IdentityServer4.AspNetIdentity.csproj\" -c Release /p:VersionPrefix=8.0.0 --version-suffix alpha  -o \"{directory}\" --no-build --nologo");
             });
 
 

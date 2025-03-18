@@ -13,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="IdentityServer4" />
-    <PackageReference Include="IdentityServer4.Storage" />
     
     <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
@@ -26,7 +24,11 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
 
-    <ProjectReference Include="..\..\main\EntityFramework.Storage\IdentityServer4.EntityFramework.Storage.csproj" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\root\EntityFramework.Storage\IdentityServer4.EntityFramework.Storage.csproj" />
+    <ProjectReference Include="..\..\root\IdentityServer4\IdentityServer4.csproj" />
+    <ProjectReference Include="..\..\root\Storage\IdentityServer4.Storage.csproj" />
   </ItemGroup>
 </Project>

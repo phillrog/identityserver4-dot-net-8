@@ -12,7 +12,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" />
     <PackageReference Include="System.Drawing.Common" />
-    <ProjectReference Include="..\..\main\EntityFramework\IdentityServer4.EntityFramework.csproj" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\..\root\EntityFramework\IdentityServer4.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>

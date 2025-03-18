@@ -15,8 +15,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" />
-
-    <ProjectReference Include="..\..\main\AspNetIdentity\IdentityServer4Plus.AspNetIdentity.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,5 +31,10 @@
       <Link>Configuration\Resources.cs</Link>
     </Compile>
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\root\AspNetIdentity\IdentityServer4.AspNetIdentity.csproj" />
+  </ItemGroup>
+
 
 </Project>

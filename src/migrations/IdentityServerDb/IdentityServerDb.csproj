@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" />
     <PackageReference Include="System.Drawing.Common" />
       
-    <ProjectReference Include="..\..\main\EntityFramework\IdentityServer4.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\root\EntityFramework\IdentityServer4.EntityFramework.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\main\EntityFramework\IdentityServer4.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\root\EntityFramework\IdentityServer4.EntityFramework.csproj" />
   </ItemGroup>
   
   

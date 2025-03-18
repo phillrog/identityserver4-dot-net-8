@@ -17,8 +17,6 @@
     <PackageReference Include="Serilog.Sinks.Console" />
     <PackageReference Include="Serilog.Sinks.File" />
     <PackageReference Include="System.Security.Principal.Windows" />
-      
-    <ProjectReference Include="..\..\main\IdentityServer4\IdentityServer4.csproj" />
   </ItemGroup>
   
   <ItemGroup>
@@ -34,6 +32,10 @@
 	<Compile Include="..\Config\Resources.cs">
 		<Link>Configuration\Resources.cs</Link>
 	</Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\root\IdentityServer4\IdentityServer4.csproj" />
   </ItemGroup>
 
 </Project>

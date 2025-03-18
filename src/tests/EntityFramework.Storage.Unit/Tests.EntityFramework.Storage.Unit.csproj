@@ -15,7 +15,10 @@
     <PackageReference Include="xunit.runner.visualstudio" />
 
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
-    <ProjectReference Include="..\..\main\EntityFramework.Storage\IdentityServer4.EntityFramework.Storage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\root\EntityFramework.Storage\IdentityServer4.EntityFramework.Storage.csproj" />
   </ItemGroup>
 
 </Project>
