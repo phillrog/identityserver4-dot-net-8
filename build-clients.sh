@@ -2,7 +2,7 @@
 set -euo pipefail
 rm -rf nuget
 mkdir nuget
-cd .src/clients
+cd ./src/clients
 
 for p in $(find . -name *.csproj); 
 do 
