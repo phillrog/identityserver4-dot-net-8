@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 using IdentityModel.Client;
@@ -60,8 +60,8 @@ namespace MvcImplicit.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> BackChannelLogout(string logout_token)
         {
-            Response.Headers.Add("Cache-Control", "no-cache, no-store");
-            Response.Headers.Add("Pragma", "no-cache");
+            Response.Headers["Cache-Control"] = "no-cache, no-store";
+            Response.Headers["Pragma"] = "no-cache";
 
             try
             {
@@ -139,7 +139,7 @@ namespace MvcImplicit.Controllers
             if (String.IsNullOrWhiteSpace(eventsJson)) throw new Exception("Invalid logout token");
 
             var events = JObject.Parse(eventsJson);
-            var logoutEvent = events.TryGetValue("http://schemas.openid.net/event/backchannel-logout");
+            events.TryGetValue("http://schemas.openid.net/event/backchannel-logout", out var logoutEvent);
             if (logoutEvent == null) throw new Exception("Invalid logout token");
 
             return claims;
