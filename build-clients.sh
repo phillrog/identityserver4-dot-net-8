@@ -8,7 +8,7 @@ for p in $(find . -name *.csproj);
 do 
     dir=$(cut -d'/' -f2 <<<"$p")
     proj=$(cut -d'/' -f3 <<<"$p")
-    if [[ $s == *"APIs"* ]]; then 
+    if [[ $dir == *"APIs"* ]]; then 
         dir=$(cut -d'/' -f3 <<<"$p"); 
         proj=$(cut -d'/' -f4 <<<"$p")
     fi
