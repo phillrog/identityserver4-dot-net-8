@@ -6,8 +6,14 @@ cd ./src/clients
 
 for p in $(find . -name *.csproj); 
 do 
-    pushd ./$(cut -d'/' -f2 <<<"$p")
+    dir=$(cut -d'/' -f2 <<<"$p")
+    proj=$(cut -d'/' -f3 <<<"$p")
+    if [[ $s == *"APIs"* ]]; then 
+        dir=$(cut -d'/' -f3 <<<"$p"); 
+        proj=$(cut -d'/' -f4 <<<"$p")
+    fi
+    pushd ./$dir
     dotnet restore
-    dotnet build $(cut -d'/' -f3 <<<"$p")  --configuration Release --no-restore; 
+    dotnet build $proj  --configuration Release --no-restore; 
     popd
 done
