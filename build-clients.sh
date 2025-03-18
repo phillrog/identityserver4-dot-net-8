@@ -8,7 +8,7 @@ cd ./src/clients
 
 for p in $(find . -name *.csproj); 
 do 
-    pushd ./$p
+    pushd $p
     dotnet restore
     dotnet build $p  --configuration Release --no-restore; 
     popd
