@@ -4,22 +4,22 @@ New-Item -ItemType Directory -Force -Path ./nuget
 
 dotnet tool restore
 
-pushd ./src/Storage
+pushd ./src/root/Storage
 Invoke-Expression "./build.ps1 $args"
 popd
 
-pushd ./src/IdentityServer4
+pushd ./src/root/IdentityServer4
 Invoke-Expression "./build.ps1 $args"
 popd
 
-pushd ./src/EntityFramework.Storage
+pushd ./src/root/EntityFramework.Storage
 Invoke-Expression "./build.ps1 $args"
 popd
 
-pushd ./src/EntityFramework
+pushd ./src/root/EntityFramework
 Invoke-Expression "./build.ps1 $args"
 popd
 
-pushd ./src/AspNetIdentity
+pushd ./src/root/AspNetIdentity
 Invoke-Expression "./build.ps1 $args"
 popd
