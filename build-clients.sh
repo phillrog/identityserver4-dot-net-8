@@ -5,7 +5,7 @@ mkdir nuget
 
 dotnet restore
 
-pushd ./src
+pushd ./src/clients
 for p in $(find . -name *.csproj); 
 do 
 
