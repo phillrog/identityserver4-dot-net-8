@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
-      - name: Build
+      - name: Permission .sh
         run: chmod +x "./build-clients.sh"
 
       - name: Build Projects
