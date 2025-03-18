@@ -20,9 +20,6 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      - name: Install dependencies 📂
-        run: dotnet restore WebApi
-
-      - name: Build 🧱
-        run: for p in $(find . -name *.csproj); do dotnet build $p  --configuration Release --no-restore; done
+      - name: Build Projects
+        - run: ./build.sh codeql
 
