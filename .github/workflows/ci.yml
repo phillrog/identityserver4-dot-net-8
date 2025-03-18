@@ -28,7 +28,7 @@ jobs:
 
     - run: dotnet --info
 
-    - name: Setup dotnet
+    - name: Setup dotnet 8
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: |
