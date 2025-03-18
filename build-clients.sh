@@ -4,10 +4,6 @@ set -euo pipefail
 rm -rf nuget
 mkdir nuget
 
-cd ./src/clients
+dotnet restore
+dotnet build ./src/IdentityServer4.Clients.sln  --configuration Release --no-restore;    
 
-for p in $(find . -name *.csproj); 
-do 
-    dotnet restore
-    dotnet build ./$p  --configuration Release --no-restore;    
-done
