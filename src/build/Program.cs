@@ -13,7 +13,7 @@ namespace build
         private const string packOutput = "./artifacts";
         private const string PACKOUTPUTCOPY = "../../nuget";
         private const string envVarMissing = " environment variable is missing. Aborting.";
-		private const string PACKAGE_VERSION=%1
+		
 
         private static class Targets
         {
