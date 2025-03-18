@@ -2,10 +2,11 @@
 
 rm -rf nuget
 mkdir nuget
+cd .src/clients
 
 for p in $(find . -name *.csproj); 
 do 
-    pushd ./src/clients/$(cut -d'/' -f2 <<<"$p")
+    pushd ./$(cut -d'/' -f2 <<<"$p")
     dotnet restore
     dotnet build $p  --configuration Release --no-restore; 
     popd
