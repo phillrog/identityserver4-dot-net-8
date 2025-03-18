@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using System.IdentityModel.Tokens.Jwt;
@@ -69,7 +69,7 @@ namespace MvcHybrid
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
             app.UseAuthentication();
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute();
         }
     }
 }
