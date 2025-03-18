@@ -1,3 +1,11 @@
+[![Build Clients](https://github.com/phillrog/identityserver4-dot-net-8/actions/workflows/ci-clients.yml/badge.svg)](https://github.com/phillrog/identityserver4-dot-net-8/actions/workflows/ci-clients.yml)
+
+[![CI](https://github.com/phillrog/identityserver4-dot-net-8/actions/workflows/ci.yml/badge.svg)](https://github.com/phillrog/identityserver4-dot-net-8/actions/workflows/ci.yml)
+
+[![CodeQL](https://github.com/phillrog/identityserver4-dot-net-8/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/phillrog/identityserver4-dot-net-8/actions/workflows/codeql-analysis.yml)
+
+
+
 # About IdentityServer
 Com a descontinuação do suporte para Identity Server 4 e a necessidade de compatibilidade com .NET 8.0, realizei a atualização do repositório original para esta nova versão. Este projeto é simplesmente uma versão atualizada do Identity Server 4 e compatibilidade com .NET 8.0.
 
