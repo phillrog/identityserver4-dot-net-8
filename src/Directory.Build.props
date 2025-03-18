@@ -1,0 +1,35 @@
+<Project>
+  <PropertyGroup>
+    <Authors>phillrog</Authors>
+    <Product>IdentityServer</Product>
+
+    <!--<DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>-->
+
+    <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;IdentityServer;ASP.NET Core</PackageTags>
+    <PackageIcon>icon.jpg</PackageIcon>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/phillrog/identityserver4-dot-net-8</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/phillrog/identityserver4-dot-net-8/releases</PackageReleaseNotes>
+    <Copyright>$(Authors)</Copyright>
+    
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType Condition="'$(GITHUB_ACTIONS)' == 'true'">embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ContinuousIntegrationBuild Condition="'$(TF_BUILD)' == 'true'">True</ContinuousIntegrationBuild>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">True</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../../LICENSE" Pack="true" Visible="false" PackagePath="" />
+    <None Include="../../../icon.jpg" Pack="true" Visible="false" PackagePath="/" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <MinVerAutoIncrement>minor</MinVerAutoIncrement>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+</Project>
