@@ -7,22 +7,21 @@ mkdir nuget
 dotnet tool restore
 
 pushd ./src/root/Storage
-ls
-../../../build.sh "$@"
+run: dotnet build --configuration Debug --no-restore
 popd
 
 pushd ./src/root/IdentityServer4
-../../../build.sh "$@"
+run: dotnet build --configuration Debug --no-restore
 popd
 
 pushd ./src/root/EntityFramework.Storage
-../../../build.sh "$@"
+run: dotnet build --configuration Debug --no-restore
 popd
 
 pushd ./src/root/EntityFramework
-../../../build.sh "$@"
+run: dotnet build --configuration Debug --no-restore
 popd
 
 pushd ./src/root/AspNetIdentity
-../../../build.sh "$@"
+run: dotnet build --configuration Debug --no-restore
 popd
