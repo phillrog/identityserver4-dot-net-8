@@ -16,8 +16,6 @@ IdentityServer é um framework OpenID Connect e OAuth 2.0 gratuito e de código 
 # Important update
 Update para .net 8
 
-See [here](https://duendesoftware.com/products/identityserver) for more details.
-
 ## About IdentityServer4
 [<img align="right" width="100px" src="https://dotnetfoundation.org/img/logo_big.svg" />](https://dotnetfoundation.org/projects?searchquery=IdentityServer&type=project)
 
